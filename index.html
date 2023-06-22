@@ -8,6 +8,15 @@
   <title>Solar System</title>
 </head>
 <body>
+  <div id="headerContainer">
+    <h1 id="title">The Solar System</h1>
+
+    <p id="description">Minimalist representation of our Solar System</p>
+
+    <a onclick="document.getElementById('screen').scrollIntoView({ behavior: 'smooth' });">
+      <img src="arrow.png" id="arrow">
+    </a>
+  </div>
   <div id="screen">
     <div id="sun"></div>
     <div id="mercury-orbit" class="orbit">

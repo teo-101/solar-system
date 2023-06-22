@@ -1,7 +1,47 @@
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+@import url('https://fonts.cdnfonts.com/css/hubot-sans');
+
 html, body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  font-family: 'mona-sans';
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(3, 3, 51, 1) 35%, rgba(0, 9, 79, 1) 73%, rgba(4, 32, 115, 1) 100%);
+}
+
+#headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 85px;
+}
+
+#title {
+  font-size: 7.5rem;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  font-family: 'Hubot-Sans';
+  margin-bottom: 0;
+}
+
+#description {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  font-family: 'Mona-Sans';
+  margin-top: 20px;
+}
+
+#arrow {
+  width: 45px;
+  height: 45px;
+  rotate: 180deg;
 }
 
 #screen {
@@ -10,7 +50,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right top, #051937, #00163f, #001346, #010d4b, #0f034f);
+  margin-bottom: 80px;
+  scroll-snap-align: start;
 }
 
 #sun {
@@ -196,3 +237,24 @@ html, body {
     transform: rotate(360deg);
   }
 }
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0c246b #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(3, 3, 51, 1) 35%, rgba(0, 9, 79, 1) 73%, rgba(4, 32, 115, 1) 100%);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0c246b;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3) inset;
+}
+
